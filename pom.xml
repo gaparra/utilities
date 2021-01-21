@@ -7,8 +7,7 @@
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	<maven.compiler.source>1.8</maven.compiler.source>
 	<maven.compiler.target>1.8</maven.compiler.target>
-	<jacoco.source>3.1.0</jacoco.source>
-	<jacoco.target>3.1.0</jacoco.target>
+	<jacoco>3.1.0</jacoco>
 	
 </properties>
   <dependencies>
