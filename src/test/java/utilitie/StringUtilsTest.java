@@ -10,12 +10,12 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 class StringUtilsTest {
 	
-//	@DisplayName("Palindromes")
-//	@ParameterizedTest(name= "{0} est un palindrome !!!") // {0} sera remplacé par le 1e argument
-//	@ValueSource(strings = {"RADAR","NON","kayak"})
-//    void isPalindromeTest(String word) {
-//        assertTrue(StringUtils.isPalindrome(word));
-//    }
+	@DisplayName("Palindromes")
+	@ParameterizedTest(name= "{0} est un palindrome !!!") // {0} sera remplacé par le 1e argument
+	@ValueSource(strings = {"RADAR","NON","kayak"})
+    void isPalindromeTest(String word) {
+        assertTrue(StringUtils.isPalindrome(word));
+    }
 	
 	@DisplayName("Non Palindromes")
 	@ParameterizedTest(name= "{0} n'est pas un palindrome !!!") // {0} sera remplacé par le 1e argument
