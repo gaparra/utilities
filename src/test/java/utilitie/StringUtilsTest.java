@@ -19,16 +19,18 @@ class StringUtilsTest {
 	
 	@DisplayName("Non Palindromes")
 	@ParameterizedTest(name= "{0} n'est pas un palindrome !!!") // {0} sera remplacé par le 1e argument
-	@ValueSource(strings = {"loupi","ordiu"})
+	@ValueSource(strings = {"loupi","ordiu","dromadaire"})
     void isNotPalindromeTest(String word) {
         assertFalse(StringUtils.isPalindrome(word));
     }
 	
 //	@DisplayName("On encode Cesar")
 //	@ParameterizedTest(name= "Le Cesar encodé  {0} est {1} !!!") // {0} sera remplacé par le 1e argument
-//	@CsvFileSource(resources = {"/fichierCsvCesar.csv"}, delimiter = ';')
+//	@CsvFileSource(resources = "/fichierCsvCesar.csv", delimiter = ';')
 //	void encodeCesarTest(String mot, String motCrypte) {
-//		assertEquals(StringUtils.encodeCesar(mot), motCrypte);
+//		System.out.println(mot);
+//		System.out.println(motCrypte);
+//		assertEquals(motCrypte, StringUtils.encodeCesar(mot));
 //	}
 	
 //	@DisplayName("On décode Cesar")
