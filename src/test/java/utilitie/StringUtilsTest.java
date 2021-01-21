@@ -12,7 +12,7 @@ class StringUtilsTest {
 	
 	@DisplayName("Palindromes")
 	@ParameterizedTest(name= "{0} est un palindrome !!!") // {0} sera remplacé par le 1e argument
-	@ValueSource(strings = {"RADAR","NON","kayak"})
+	@ValueSource(strings = {"RADAR","NON","kayaks"})
     void isPalindromeTest(String word) {
         assertTrue(StringUtils.isPalindrome(word));
     }
