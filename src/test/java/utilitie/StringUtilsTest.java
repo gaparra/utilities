@@ -33,12 +33,12 @@ class StringUtilsTest {
 		assertEquals(motCrypte, StringUtils.encodeCesar(mot));
 	}
 	
-//	@DisplayName("On décode Cesar")
-//	@ParameterizedTest(name= "Le Cesar décodé de {1} est {0} !!!") // {0} sera remplacé par le 1e argument
-//	@CsvFileSource(resources = {"/fichierCsvCesar.csv"}, delimiter = ';')
-//	void decodeCesarTest(String mot, String motCrypte) {
-//		assertEquals(StringUtils.decodeCesar(motCrypte), mot);
-//	}
+	@DisplayName("On décode Cesar")
+	@ParameterizedTest(name= "Le Cesar décodé de {1} est {0} !!!") // {0} sera remplacé par le 1e argument
+	@CsvFileSource(resources = {"/fichierCsvCesar.csv"}, delimiter = ';')
+	void decodeCesarTest(String mot, String motCrypte) {
+		assertEquals(StringUtils.decodeCesar(motCrypte), mot);
+	}
 
 //	@Test
 //    void isPalindromeTest() {
