@@ -42,7 +42,7 @@ public class ApplicationTest {
 		// Appel du traitement faisant appel à object
     }
 	
-	@Test
+//	@Test
     public void findAllStudentFakeNamesTest() {
 		appli = new Application(studentServ);
 

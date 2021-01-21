@@ -24,7 +24,7 @@ class MathUtilsTest {
 
 	@DisplayName("Calcul de la factorielle")
 	@ParameterizedTest(name= "La factorielle de {0} est {1} !!!") // {0} sera remplacé par le 1e argument
-	@CsvFileSource(resources = {"fichierCsv.csv"}, delimiter = ';')
+	@CsvFileSource(resources = {"/fichierCsv.csv"}, delimiter = ';')
 	void factorialTest(int nbrToTest, double nbrResult) {
 		assertEquals(nbrResult, MathUtils.factorial(nbrToTest));
 	}
